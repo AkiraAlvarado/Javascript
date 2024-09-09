@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+   <title>TodoList</title>
+</head>
+
+<body>
+   <!-- <i class="fa-solid fa-trash"></i> -->
+   <!-- <i class="fa-regular fa-circle"></i> -->
+   <!-- <i class="fa-regular fa-circle-check"></i> -->
+   <!-- <i class="fa-solid fa-circle-plus"></i> -->
+   <!-- <i class="fa-solid fa-circle"></i>  -->
+   <div class="container">
+      <h1>Cumplamos tus metas el día de hoy</h1>
+
+      <div class="input-container">
+         <div class="add-task">
+            <input class="input" type="text" id="input" placeholder="Agregue una tarea">
+            <i id="button-add" class="fa-solid fa-circle-plus"></i>
+         </div>
+         <select class="input" name="tipoTarea" id="tipoTarea">
+            <option value="urgent">Urgente</option>
+            <option value="aplazable">Aplazable</option>
+         </select>
+      </div>
+
+      <div class="task-container">
+         <div class="task-column">
+            <h2>Urgente</h2>
+            <div id="urgent-column" class="task-content">
+            </div>
+         </div>
+
+         <div class="task-column">
+            <h2>Aplazables</h2>
+            <div id="aplazable-column" class="task-content">
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel API Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <script>
+        // Claves proporcionadas
+        const publicKey = 'abfac7e05f4831bd9eb9dc402821d48a';
+        const privateKey = '8238cb67e62815f2acf73711ef0243e1edcd6aa8';
+
+        // Generar el timestamp actual
+        const ts = Date.now().toString();  // Timestamp como string
+
+        // Concatenar los valores y generar el hash usando CryptoJS
+        const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
+
+        // Construir la URL final
+        const url = `https://gateway.marvel.com/v1/public/characters?name=Wolverine&ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+
+        console.log(url);  // Esto imprimirá la URL completa que puedes usar para hacer la solicitud
+         console.log("gola")
+        // Ejemplo de uso con fetch
+        fetch(url)
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

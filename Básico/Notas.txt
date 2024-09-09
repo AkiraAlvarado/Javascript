@@ -1,0 +1,31 @@
+1.- Esto serviria para verificar que este en el rango
+
+do{
+   veces = parseInt(prompt("¿Cuantas repeticiones (1-15)?"));
+}while (veces <1 || veces > 15)
+
+2.- Un problema que he tenido mucho es donde inicializar las variables por ejemplo de uma
+En el ejercicio de abajo , pedia sumar todos los numeros pares anteriores al ingresado
+mi problema era que no ponia contados = 0  y suma = 0 cada vez que repetia el ciclo
+debo arreglar eso
+
+let numero
+do{
+    numero = parseInt(prompt("Ingrese un numero"))
+    let contador=0, suma=0
+    do{
+        if(contador % 2 ==0){
+            suma += contador
+        }
+        contador++
+    }while(contador<numero)
+    console.log(suma)
+
+} while(numero > 0 )
+
+3.- Aquí cod es un array de codigos, pero que pasaria si no nos da un
+array de códigos, hay que comenzar a validar todo eso
+
+const pedirProducto = cod => {
+   
+}

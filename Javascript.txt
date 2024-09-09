@@ -1,0 +1,10 @@
+1.- Poner algo como boton.id == "borrar" , nos indica , si el id del boton es borrar , haz tal cosa , funciona cuando tenemos un forEach
+ que esta recorriendo un array de botones, y aun boton en especifico le ponemos el id borrar 
+2.- Se puede usar textContent como variable, según sea el Id por ejemplo
+if (boton.id === "c") {
+    pantalla.textContent = "0"
+    return// Acaba el if justo aqui, no ejecuta lo de abajo
+  }
+3.- 
+
+

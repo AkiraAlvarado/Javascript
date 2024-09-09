@@ -1,0 +1,23 @@
+{
+   "manifest_version": 3,
+   "name": "EDjs-dom",
+   "version": "0.0.5",
+   "description": "Extension en Javascript",
+   "action": {
+      "default_title": "Haz click aqui",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [
+      {
+         "matches": [
+            "https://*.ed.team/*"
+         ],
+         "css": [
+            "ed.css"
+         ],
+         "js": [
+            "ed.js"
+         ]
+      }
+   ]
+}

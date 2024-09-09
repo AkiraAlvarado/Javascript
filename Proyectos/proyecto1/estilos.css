@@ -1,0 +1,136 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #7d2ae8
+}
+
+.countdown {
+   display: flex;
+   justify-content: space-evenly;
+   width: 50%;
+   flex-wrap: wrap;
+}
+
+.countdown div {
+   display: grid;
+   place-items: center;
+   padding: 10px;
+}
+
+h1 {
+   text-align: center;
+   font-size: 40px;
+   padding: 30px 10px;
+   color: #fff;
+}
+
+p {
+   display: grid;
+   place-items: center;
+   border: 1px solid #fff;
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   color: #7d2ae8;
+   font-size: 2rem;
+   background-color: #fff;
+}
+
+span {
+   display: block;
+   padding: 10px;
+   text-align: center;
+   font-size: 1.5rem;
+   color: #fff;
+}
+
+.mensaje-final {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   display: grid;
+   place-items: center;
+   transform: translate(-100%);
+   transition: ease-in-out 0.5s;
+}
+
+.mensaje-final {
+   text-align: center;
+   font-size: 100px;
+}
+
+.invisible {
+   display: none;
+}
+
+.active {
+   display: flex;
+}
+
+/* Segunda pag*/
+
+.wrapper {
+   user-select: none;
+   height: 100vh;
+   width: 100%;
+   background-color: #7d2ae8;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.time {
+   height: 100px;
+   background: #FFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 6px;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.time span {
+   width: 100px;
+   text-align: center;
+   font-size: 50px;
+   color: #333;
+}
+
+span.colon {
+   width: 10px;
+}
+
+span.ms-colon,
+span.millisecond {
+   color: #7d2ae8;
+}
+
+.buttons button {
+   padding: 6px 16px;
+   border: none;
+   margin: 0 5px;
+   color: #7d2ae8;
+   font-size: 20px;
+   font-weight: 500;
+   border-radius: 4px;
+   cursor: pointer;
+}
